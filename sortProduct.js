@@ -32,21 +32,34 @@
 
 // Output: 2, 3, 4, 23, 5
 
+function productSorter (arr){
+    let result=[]
+    for( let i=0; i<arr.length;i++){
+results.push(product);
+results.sort(function(a,b){
+    return a-b;
+})
+    };
+    return results;
+}
+const flurpy=[23, 2,3,4,5]
+
+
 //SOLUTION 1
-function sortByValueAndIndex(array) {
-    let totals = []
-    array.forEach((e, i) => {
-      let totalObj = {
-        total: e*(i+1),
-        i: i
-      }
-      totals.push(totalObj)
-    })
-    totals.sort((a, b) => a.total - b.total)
-    let newArr = []
-    totals.forEach(e => newArr.push(array[e.i]))
-    return newArr
-  }
+// function sortByValueAndIndex(array) {
+//     let totals = []
+//     array.forEach((e, i) => {
+//       let totalObj = {
+//         total: e*(i+1),
+//         i: i
+//       }
+//       totals.push(totalObj)
+//     })
+//     totals.sort((a, b) => a.total - b.total)
+//     let newArr = []
+//     totals.forEach(e => newArr.push(array[e.i]))
+//     return newArr
+//   }
   
   
   //SOLUTION 2
@@ -82,6 +95,6 @@ function sortByValueAndIndex(array) {
   //   return newArr;
   // }
   
-  sortByValueAndIndex([9, 5, 1, 4, 3])
-  //1, 9, 5, 3, 4 
+//   sortByValueAndIndex([9, 5, 1, 4, 3])
+//   //1, 9, 5, 3, 4 
   
